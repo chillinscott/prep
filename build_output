@@ -3,6 +3,99 @@ Microsoft (R) Visual C# Compiler version 4.0.30319.17929
 for Microsoft (R) .NET Framework 4.5
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-source\prep.specs\file_event_kata_specs\FileEventSpecs.cs(40,23): error CS0161: 'prep.specs.file_event_kata_specs.FileEventParser.Parse(string)': not all code paths return a value
+source\prep.specs\file_event_kata_specs\FileEventSpecs.cs(13,24): warning CS0169: The field 'prep.specs.file_event_kata_specs.FileEventSpecs.when_given_a_series_of_file_events.number_of_movies' is never used
+
+Specs in prep.specs:
+
+MovieLibrary, when counting the number of movies
+¯ should return the number of all movies in the library
+
+MovieLibrary, when asked for all of the movies
+¯ should receive a set containing each movie in the library
+
+MovieLibrary, when trying to change the set of movies returned by the movie library to a mutable type
+¯ should get an invalid cast exception (FAIL)
+Machine.Specifications.SpecificationException: Should be of type System.InvalidCastException but is [null]
+   at Machine.Specifications.ShouldExtensionMethods.ShouldBeOfType(Object actual, Type expected)
+   at developwithpassion.specifications.extensions.AssertionExtensions.ShouldBeAn[T](Object result)
+   at Machine.Specifications.Model.Specification.Verify()
+
+MovieLibrary, when adding a movie to the library
+¯ should store it in the movie collection (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_adding_a_movie_to_the_library.<.ctor>b__17()
+   at Machine.Specifications.Utility.RandomExtensionMethods.Each[T](IEnumerable`1 enumerable, Action`1 action)
+   at Machine.Specifications.Model.Context.EstablishContext()
+
+MovieLibrary, when adding an existing movie in the collection again
+¯ should not restore the movie in the collection (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_adding_an_existing_movie_in_the_collection_again.<.ctor>b__1d()
+   at Machine.Specifications.Utility.RandomExtensionMethods.Each[T](IEnumerable`1 enumerable, Action`1 action)
+   at Machine.Specifications.Model.Context.EstablishContext()
+
+MovieLibrary, when adding two different copies of the same movie
+¯ should store only 1 copy in the collection (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_adding_two_different_copies_of_the_same_movie.<.ctor>b__25()
+   at Machine.Specifications.Utility.RandomExtensionMethods.Each[T](IEnumerable`1 enumerable, Action`1 action)
+   at Machine.Specifications.Model.Context.EstablishContext()
+
+MovieLibrary, when searching for movies
+¯ should be able to find all movies published by pixar (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_searching_for_movies.<.ctor>b__33()
+   at Machine.Specifications.Model.Specification.Verify()
+¯ should be able to find all movies published by pixar or disney (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_searching_for_movies.<.ctor>b__34()
+   at Machine.Specifications.Model.Specification.Verify()
+¯ should be able to find all movies not published by pixar (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_searching_for_movies.<.ctor>b__35()
+   at Machine.Specifications.Model.Specification.Verify()
+¯ should be able to find all movies published after a certain year (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_searching_for_movies.<.ctor>b__36()
+   at Machine.Specifications.Model.Specification.Verify()
+¯ should be able to find all movies published between a certain range of years (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_searching_for_movies.<.ctor>b__37()
+   at Machine.Specifications.Model.Specification.Verify()
+¯ should be able to find all kid movies (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_searching_for_movies.<.ctor>b__38()
+   at Machine.Specifications.Model.Specification.Verify()
+¯ should be able to find all action movies (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_searching_for_movies.<.ctor>b__39()
+   at Machine.Specifications.Model.Specification.Verify()
+
+MovieLibrary, when sorting movies
+¯ should be able to sort all movies by title descending (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_sorting_movies.<.ctor>b__41()
+   at Machine.Specifications.Model.Specification.Verify()
+¯ should be able to sort all movies by title ascending (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_sorting_movies.<.ctor>b__42()
+   at Machine.Specifications.Model.Specification.Verify()
+¯ should be able to sort all movies by date published descending (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_sorting_movies.<.ctor>b__43()
+   at Machine.Specifications.Model.Specification.Verify()
+¯ should be able to sort all movies by date published ascending (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_sorting_movies.<.ctor>b__44()
+   at Machine.Specifications.Model.Specification.Verify()
+¯ should be able to sort all movies by studio rating and year published (FAIL)
+System.NotImplementedException: The method or operation is not implemented.
+   at prep.specs.MovieLibrarySpecs.when_sorting_movies.<.ctor>b__45()
+   at Machine.Specifications.Model.Specification.Verify()
+
+when given a series of file events
+¯ should output human readable output
+
+Contexts: 9, Specifications: 19, Time: 0.23 seconds
+  3 passed, 16 failed
 ********************You may want to consider changing the value of the setting remotes in the file c:/course/prep/build/support/002_configuration/git.rb*********************************
-F, [2012-11-07T09:47:46.928708 #9608] FATAL -- : CSC Failed. See Build Log For Detail
