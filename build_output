@@ -1,0 +1,8 @@
+Microsoft (R) Visual C# Compiler version 4.0.30319.17929
+
+for Microsoft (R) .NET Framework 4.5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+source\prep.specs\file_event_kata_specs\FileEventSpecs.cs(40,23): error CS0161: 'prep.specs.file_event_kata_specs.FileEventParser.Parse(string)': not all code paths return a value
+********************You may want to consider changing the value of the setting remotes in the file c:/course/prep/build/support/002_configuration/git.rb*********************************
+F, [2012-11-07T09:47:46.928708 #9608] FATAL -- : CSC Failed. See Build Log For Detail
